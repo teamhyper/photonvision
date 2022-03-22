@@ -37,7 +37,7 @@ import org.photonvision.vision.camera.ZeroCopyPicamSource;
 
 public class VisionSourceManager {
     private static final Logger logger = new Logger(VisionSourceManager.class, LogGroup.Camera);
-    private static final List<String> deviceBlacklist = List.of("bcm2835-isp");
+    private static final List<String> deviceBlacklist = List.of("bcm2835-isp", "H264 USB Camera");
 
     final List<UsbCameraInfo> knownUsbCameras = new CopyOnWriteArrayList<>();
     final List<CameraConfiguration> unmatchedLoadedConfigs = new CopyOnWriteArrayList<>();
